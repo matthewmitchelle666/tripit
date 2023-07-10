@@ -1,0 +1,699 @@
+
+
+<!DOCTYPE html>
+<html  lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"73cfbe2969",applicationID:"385822913"};;/*! For license information please see nr-loader-rum-1.236.0.min.js.LICENSE.txt */
+(()=>{"use strict";var e,t,n={5763:(e,t,n)=>{n.d(t,{P_:()=>f,Mt:()=>p,C5:()=>s,DL:()=>m,OP:()=>_,lF:()=>E,Yu:()=>y,Dg:()=>g,CX:()=>c,GE:()=>b,sU:()=>j});var r=n(8632),i=n(9567);const o={beacon:r.ce.beacon,errorBeacon:r.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.D)(t,o),(0,r.Qy)(e,a[e],"info")}var d=n(7056);const u=()=>{const e={blockSelector:"[data-nr-block]",maskInputOptions:{password:!0}};return{allow_bfcache:!0,privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,enabled:!0,harvestTimeSeconds:10},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10},metrics:{enabled:!0},page_action:{enabled:!0,harvestTimeSeconds:30},page_view_event:{enabled:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1},session_trace:{enabled:!0,harvestTimeSeconds:10},harvest:{tooManyRequestsDelay:60},session_replay:{enabled:!1,harvestTimeSeconds:60,sampleRate:.1,errorSampleRate:.1,maskTextSelector:"*",maskAllInputs:!0,get blockClass(){return"nr-block"},get ignoreClass(){return"nr-ignore"},get maskTextClass(){return"nr-mask"},get blockSelector(){return e.blockSelector},set blockSelector(t){e.blockSelector+=",".concat(t)},get maskInputOptions(){return e.maskInputOptions},set maskInputOptions(t){e.maskInputOptions={...t,password:!0}}},spa:{enabled:!0,harvestTimeSeconds:10}}},l={};function f(e){if(!e)throw new Error("All configuration objects require an agent identifier!");if(!l[e])throw new Error("Configuration for ".concat(e," was never set"));return l[e]}function g(e,t){if(!e)throw new Error("All configuration objects require an agent identifier!");l[e]=(0,i.D)(t,u()),(0,r.Qy)(e,l[e],"config")}function p(e,t){if(!e)throw new Error("All configuration objects require an agent identifier!");var n=f(e);if(n){for(var r=t.split("."),i=0;i<r.length-1;i++)if("object"!=typeof(n=n[r[i]]))return;n=n[r[r.length-1]]}return n}const h={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},v={};function m(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!v[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return v[e]}function b(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");v[e]=(0,i.D)(t,h),(0,r.Qy)(e,v[e],"loader_config")}const y=(0,r.mF)().o;var w=n(385),A=n(6818);const x={buildEnv:A.Re,bytesSent:{},queryBytesSent:{},customTransaction:void 0,disabled:!1,distMethod:A.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(w._A?.performance?.timeOrigin||w._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+w._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof w._A.XMLHttpRequest?.prototype?.addEventListener,version:A.q4},D={};function _(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!D[e])throw new Error("Runtime for ".concat(e," was never set"));return D[e]}function j(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");D[e]=(0,i.D)(t,x),(0,r.Qy)(e,D[e],"runtime")}function E(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,n)=>{n.d(t,{D:()=>i});var r=n(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,r.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,r.Z)("Setting a Configurable requires a model to set its initial properties");const n=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(n).length?e:n;for(let a in o)if(void 0!==e[a])try{"object"==typeof e[a]&&"object"==typeof t[a]?n[a]=i(e[a],t[a]):n[a]=e[a]}catch(e){(0,r.Z)("An error occurred while setting a property of a Configurable",e)}return n}catch(e){(0,r.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,n)=>{n.d(t,{Re:()=>i,gF:()=>o,q4:()=>r});const r="1.236.0",i="PROD",o="CDN"},385:(e,t,n)=>{n.d(t,{FN:()=>a,IF:()=>d,Nk:()=>l,Tt:()=>s,_A:()=>o,il:()=>r,pL:()=>c,v6:()=>i,w1:()=>u});const r="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=r?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a=""+o?.location,s=/iPad|iPhone|iPod/.test(navigator.userAgent),c=s&&"undefined"==typeof SharedWorker,d=(()=>{const e=navigator.userAgent.match(/Firefox[/\s](\d+\.\d+)/);return Array.isArray(e)&&e.length>=2?+e[1]:0})(),u=Boolean(r&&window.document.documentMode),l=!!navigator.sendBeacon},1117:(e,t,n)=>{n.d(t,{w:()=>o});var r=n(50);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,r.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,n]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=n)}))}catch(e){(0,r.Z)("An error occured while setting SharedContext",e)}}}},8e3:(e,t,n)=>{n.d(t,{L:()=>u,R:()=>c});var r=n(2177),i=n(1284),o=n(4322),a=n(3325);const s={};function c(e,t){const n={staged:!1,priority:a.p[t]||0};d(e),s[e].get(t)||s[e].set(t,n)}function d(e){e&&(s[e]||(s[e]=new Map))}function u(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature";if(d(e),!e||!s[e].get(t))return a(t);s[e].get(t).staged=!0;const n=[...s[e]];function a(t){const n=e?r.ee.get(e):r.ee,a=o.X.handlers;if(n.backlog&&a){var s=n.backlog[t],c=a[t];if(c){for(var d=0;s&&d<s.length;++d)l(s[d],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,n){n[0].on(e,n[1])}))}))}delete a[t],n.backlog[t]=null,n.emit("drain-"+t,[])}}n.every((e=>{let[t,n]=e;return n.staged}))&&(n.sort(((e,t)=>e[1].priority-t[1].priority)),n.forEach((e=>{let[t]=e;a(t)})))}function l(e,t){var n=e[1];(0,i.D)(t[n],(function(t,n){var r=e[0];if(n[0]===r){var i=n[1],o=e[3],a=e[2];i.apply(o,a)}}))}},2177:(e,t,n)=>{n.d(t,{ee:()=>d});var r=n(8632),i=n(2210),o=n(1284),a=n(5763),s="nr@context";let c=(0,r.fP)();var d;function u(){}function l(){return new u}function f(){d.aborted=!0,d.backlog={}}c.ee?d=c.ee:(d=function e(t,n){var r={},c={},g={},p=!1;try{p=16===n.length&&(0,a.OP)(n).isolatedBacklog}catch(e){}var h={on:b,addEventListener:b,removeEventListener:y,emit:m,get:A,listeners:w,context:v,buffer:x,abort:f,aborted:!1,isBuffering:D,debugId:n,backlog:p?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return h;function v(e){return e&&e instanceof u?e:e?(0,i.X)(e,s,l):l()}function m(e,n,r,i,o){if(!1!==o&&(o=!0),!d.aborted||i){t&&o&&t.emit(e,n,r);for(var a=v(r),s=w(e),u=s.length,l=0;l<u;l++)s[l].apply(a,n);var f=_()[c[e]];return f&&f.push([h,e,n,a]),a}}function b(e,t){r[e]=w(e).concat(t)}function y(e,t){var n=r[e];if(n)for(var i=0;i<n.length;i++)n[i]===t&&n.splice(i,1)}function w(e){return r[e]||[]}function A(t){return g[t]=g[t]||e(h,t)}function x(e,t){var n=_();h.aborted||(0,o.D)(e,(function(e,r){t=t||"feature",c[r]=t,t in n||(n[t]=[])}))}function D(e){return!!_()[c[e]]}function _(){return h.backlog}}(void 0,"globalEE"),c.ee=d)},5546:(e,t,n)=>{n.d(t,{E:()=>r,p:()=>i});var r=n(2177).ee.get("handle");function i(e,t,n,i,o){o?(o.buffer([e],i),o.emit(e,t,n)):(r.buffer([e],i),r.emit(e,t,n))}},4322:(e,t,n)=>{n.d(t,{X:()=>o});var r=n(5546);o.on=a;var i=o.handlers={};function o(e,t,n,o){a(o||r.E,i,e,t,n)}function a(e,t,n,i,o){o||(o="feature"),e||(e=r.E);var a=t[o]=t[o]||{};(a[n]=a[n]||[]).push([e,i])}},3239:(e,t,n)=>{n.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var r=n(385);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};r._A.addEventListener("test",null,e),r._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],r=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(n,r))}function c(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],r=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(n,r))}},4402:(e,t,n)=>{n.d(t,{Rl:()=>a,ky:()=>s});var r=n(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=r._A?.crypto||r._A?.msCrypto;let t,n=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(31))),i.split("").map((e=>"x"===e?o(t,++n).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=r._A?.crypto||r._A?.msCrypto;let n,i=0;t&&t.getRandomValues&&(n=t.getRandomValues(new Uint8Array(31)));const a=[];for(var s=0;s<e;s++)a.push(o(n,++i).toString(16));return a.join("")}},7056:(e,t,n)=>{n.d(t,{Bq:()=>r,Hb:()=>o,oD:()=>i});const r="NRBA",i=144e5,o=18e5},7894:(e,t,n)=>{function r(){return Math.round(performance.now())}n.d(t,{z:()=>r})},50:(e,t,n)=>{function r(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}n.d(t,{Z:()=>r})},2587:(e,t,n)=>{n.d(t,{N:()=>c,T:()=>d});var r=n(2177),i=n(5546),o=n(8e3),a=n(3325);const s={stn:[a.D.sessionTrace],err:[a.D.jserrors,a.D.metrics],ins:[a.D.pageAction],spa:[a.D.spa],sr:[a.D.sessionReplay,a.D.sessionTrace]};function c(e,t){const n=r.ee.get(t);e&&"object"==typeof e&&(Object.entries(e).forEach((e=>{let[t,r]=e;void 0===d[t]&&(s[t]?s[t].forEach((e=>{r?(0,i.p)("feat-"+t,[],void 0,e,n):(0,i.p)("block-"+t,[],void 0,e,n),(0,i.p)("rumresp-"+t,[Boolean(r)],void 0,e,n)})):r&&(0,i.p)("feat-"+t,[],void 0,void 0,n),d[t]=Boolean(r))})),Object.keys(s).forEach((e=>{void 0===d[e]&&(s[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,n))),d[e]=!1)})),(0,o.L)(t,a.D.pageViewEvent))}const d={}},2210:(e,t,n)=>{n.d(t,{X:()=>i});var r=Object.prototype.hasOwnProperty;function i(e,t,n){if(r.call(e,t))return e[t];var i=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},1284:(e,t,n)=>{n.d(t,{D:()=>r});const r=(e,t)=>Object.entries(e||{}).map((e=>{let[n,r]=e;return t(n,r)}))},4351:(e,t,n)=>{n.d(t,{P:()=>o});var r=n(2177);const i=()=>{const e=new WeakSet;return(t,n)=>{if("object"==typeof n&&null!==n){if(e.has(n))return;e.add(n)}return n}};function o(e){try{return JSON.stringify(e,i())}catch(e){try{r.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,n)=>{n.d(t,{K:()=>a,b:()=>o});var r=n(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,r.bP)("load",e,t)}function a(e){if(i())return e();(0,r.iz)("DOMContentLoaded",e)}},8632:(e,t,n)=>{n.d(t,{EZ:()=>d,Qy:()=>c,ce:()=>o,fP:()=>a,gG:()=>u,mF:()=>s});var r=n(7894),i=n(385);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t,n){let i=a();const o=i.initializedAgents||{},s=o[e]||{};return Object.keys(s).length||(s.initializedAt={ms:(0,r.z)(),date:new Date}),i.initializedAgents={...o,[e]:{...s,[n]:t}},i}function d(e,t){a()[e]=t}function u(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},7956:(e,t,n)=>{n.d(t,{N:()=>i});var r=n(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],n=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;return void(0,r.iz)("visibilitychange",(function(){if(t)return void("hidden"==document.visibilityState&&e());e(document.visibilityState)}),n,i)}},3081:(e,t,n)=>{n.d(t,{gF:()=>o,mY:()=>i,t9:()=>r,vz:()=>s,xS:()=>a});const r=n(3325).D.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},7633:(e,t,n)=>{n.d(t,{Dz:()=>i,OJ:()=>a,qw:()=>o,t9:()=>r});const r=n(3325).D.pageViewEvent,i="firstbyte",o="domcontent",a="windowload"},9251:(e,t,n)=>{n.d(t,{t:()=>r});const r=n(3325).D.pageViewTiming},5938:(e,t,n)=>{n.d(t,{W:()=>o});var r=n(5763),i=n(2177);class o{constructor(e,t,n){this.agentIdentifier=e,this.aggregator=t,this.ee=i.ee.get(e,(0,r.OP)(this.agentIdentifier).isolatedBacklog),this.featureName=n,this.blocked=!1}}},9144:(e,t,n)=>{n.d(t,{j:()=>v});var r=n(3325),i=n(5763),o=n(5546),a=n(2177),s=n(7894),c=n(8e3),d=n(3960),u=n(385),l=n(50),f=n(3081),g=n(8632);function p(){const e=(0,g.gG)();["setErrorHandler","finished","addToTrace","inlineHit","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId"].forEach((t=>{e[t]=function(){for(var n=arguments.length,r=new Array(n),i=0;i<n;i++)r[i]=arguments[i];return function(t){for(var n=arguments.length,r=new Array(n>1?n-1:0),i=1;i<n;i++)r[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&o.push(e.api[t](...r))})),o.length>1?o:o[0]}(t,...r)}}))}var h=n(2587);function v(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},v=arguments.length>2?arguments[2]:void 0,m=arguments.length>3?arguments[3]:void 0,{init:b,info:y,loader_config:w,runtime:A={loaderType:v},exposed:x=!0}=t;const D=(0,g.gG)();y||(b=D.init,y=D.info,w=D.loader_config),(0,i.Dg)(e,b||{}),(0,i.GE)(e,w||{}),(0,i.sU)(e,A),y.jsAttributes??={},u.v6&&(y.jsAttributes.isWorker=!0),(0,i.CX)(e,y),p();const _=function(e,t){t||(0,c.R)(e,"api");const g={};var p=a.ee.get(e),h=p.get("tracer"),v="api-",m=v+"ixn-";function b(t,n,r,o){const a=(0,i.C5)(e);return null===n?delete a.jsAttributes[t]:(0,i.CX)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:n}}),A(v,r,!0,o||null===n?"session":void 0)(t,n)}function y(){}["setErrorHandler","finished","addToTrace","inlineHit","addRelease"].forEach((e=>g[e]=A(v,e,!0,"api"))),g.addPageAction=A(v,"addPageAction",!0,r.D.pageAction),g.setCurrentRouteName=A(v,"routeName",!0,r.D.spa),g.setPageViewName=function(t,n){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(n||"http://custom.transaction")+t,A(v,"setPageViewName",!0)()},g.setCustomAttribute=function(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number"].includes(typeof t)||null===t)return b(e,t,"setCustomAttribute",n);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string or number type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setUserId=function(e){if("string"==typeof e||null===e)return b("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.interaction=function(){return(new y).get()};var w=y.prototype={createTracer:function(e,t){var n={},i=this,a="function"==typeof t;return(0,o.p)(m+"tracer",[(0,s.z)(),e,n],i,r.D.spa,p),function(){if(h.emit((a?"":"no-")+"fn-start",[(0,s.z)(),i,a],n),a)try{return t.apply(this,arguments)}catch(e){throw h.emit("fn-err",[arguments,this,"string"==typeof e?new Error(e):e],n),e}finally{h.emit("fn-end",[(0,s.z)()],n)}}}};function A(e,t,n,i){return function(){return(0,o.p)(f.xS,["API/"+t+"/called"],void 0,r.D.metrics,p),i&&(0,o.p)(e+t,[(0,s.z)(),...arguments],n?null:this,i,p),n?void 0:this}}function x(){n.e(439).then(n.bind(n,7438)).then((t=>{let{setAPI:n}=t;n(e),(0,c.L)(e,"api")})).catch((()=>(0,l.Z)("Downloading runtime APIs failed...")))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{w[e]=A(m,e,void 0,r.D.spa)})),g.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,o.p)(f.xS,["API/noticeError/called"],void 0,r.D.metrics,p),(0,o.p)("err",[e,(0,s.z)(),!1,t],void 0,r.D.jserrors,p)},u.il?(0,d.b)((()=>x()),!0):x(),g}(e,m);return(0,g.Qy)(e,_,"api"),(0,g.Qy)(e,x,"exposed"),(0,g.EZ)("activatedFeatures",h.T),_}},3325:(e,t,n)=>{n.d(t,{D:()=>r,p:()=>i});const r={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[r.pageViewEvent]:1,[r.pageViewTiming]:2,[r.metrics]:3,[r.jserrors]:4,[r.ajax]:5,[r.sessionTrace]:6,[r.pageAction]:7,[r.spa]:8,[r.sessionReplay]:9}}},r={};function i(e){var t=r[e];if(void 0!==t)return t.exports;var o=r[e]={exports:{}};return n[e](o,o.exports,i),o.exports}i.m=n,i.d=(e,t)=>{for(var n in t)i.o(t,n)&&!i.o(e,n)&&Object.defineProperty(e,n,{enumerable:!0,get:t[n]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,n)=>(i.f[n](e,t),t)),[])),i.u=e=>(({78:"page_action-aggregate",147:"metrics-aggregate",242:"session-manager",317:"jserrors-aggregate",348:"page_view_timing-aggregate",412:"lazy-feature-loader",439:"async-api",538:"recorder",590:"session_replay-aggregate",675:"compressor",733:"session_trace-aggregate",786:"page_view_event-aggregate",873:"spa-aggregate",898:"ajax-aggregate"}[e]||e)+"."+{78:"ac76d497",147:"3dc53903",148:"1a20d5fe",242:"2a64278a",317:"49e41428",348:"bd6de33a",412:"2f55ce66",439:"30bd804e",538:"1b18459f",590:"cf0efb30",675:"ae9f91a8",733:"83105561",786:"06482edd",860:"03a8b7a5",873:"e6b09d52",898:"998ef92b"}[e]+"-1.236.0.min.js"),i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA:",i.l=(n,r,o,a)=>{if(e[n])e[n].push(r);else{var s,c;if(void 0!==o)for(var d=document.getElementsByTagName("script"),u=0;u<d.length;u++){var l=d[u];if(l.getAttribute("src")==n||l.getAttribute("data-webpack")==t+o){s=l;break}}s||(c=!0,(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=n),e[n]=[r];var f=(t,r)=>{s.onerror=s.onload=null,clearTimeout(g);var i=e[n];if(delete e[n],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(r))),t)return t(r)},g=setTimeout(f.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=f.bind(null,s.onerror),s.onload=f.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.j=6,i.p="https://js-agent.newrelic.com/",(()=>{var e={6:0,352:0};i.f.j=(t,n)=>{var r=i.o(e,t)?e[t]:void 0;if(0!==r)if(r)n.push(r[2]);else{var o=new Promise(((n,i)=>r=e[t]=[n,i]));n.push(r[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(n=>{if(i.o(e,t)&&(0!==(r=e[t])&&(e[t]=void 0),r)){var o=n&&("load"===n.type?"missing":n.type),a=n&&n.target&&n.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,r[1](s)}}),"chunk-"+t,t)}};var t=(t,n)=>{var r,o,[a,s,c]=n,d=0;if(a.some((t=>0!==e[t]))){for(r in s)i.o(s,r)&&(i.m[r]=s[r]);if(c)c(i)}for(t&&t(n);d<a.length;d++)o=a[d],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},n=window.webpackChunkNRBA=window.webpackChunkNRBA||[];n.forEach(t.bind(null,0)),n.push=t.bind(null,n.push.bind(n))})();var o={};(()=>{i.r(o);var e=i(3325),t=i(5763);const n=Object.values(e.D);function r(e){const r={};return n.forEach((n=>{r[n]=function(e,n){return!1!==(0,t.Mt)(n,"".concat(e,".enabled"))}(n,e)})),r}var a=i(9144);var s=i(5546),c=i(385),d=i(8e3),u=i(5938),l=i(3960),f=i(50);class g extends u.W{constructor(e,t,n){let r=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,n),this.auto=r,this.abortHandler,this.featAggregate,this.onAggregateImported,r&&(0,d.R)(e,n)}importAggregator(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate||!this.auto)return;const n=c.il&&!0===(0,t.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let r;this.onAggregateImported=new Promise((e=>{r=e}));const o=async()=>{let t;try{if(n){const{setupAgentSession:e}=await Promise.all([i.e(860),i.e(242)]).then(i.bind(i,3228));t=e(this.agentIdentifier)}}catch(e){(0,f.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",e)}try{if(!this.shouldImportAgg(this.featureName,t))return void(0,d.L)(this.agentIdentifier,this.featureName);const{lazyFeatureLoader:n}=await i.e(412).then(i.bind(i,8582)),{Aggregate:o}=await n(this.featureName,"aggregate");this.featAggregate=new o(this.agentIdentifier,this.aggregator,e),r(!0)}catch(e){(0,f.Z)("Downloading and initializing ".concat(this.featureName," failed..."),e),this.abortHandler?.(),r(!1)}};c.il?(0,l.b)((()=>o()),!0):o()}shouldImportAgg(n,r){return n!==e.D.sessionReplay||!1!==(0,t.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!r?.isNew||!!r?.state.sessionReplay)}}var p=i(7633),h=i(7894);class v extends g{static featureName=p.t9;constructor(n,r){let i=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(n,r,p.t9,i),("undefined"==typeof PerformanceNavigationTiming||c.Tt)&&"undefined"!=typeof PerformanceTiming){const r=(0,t.OP)(n);r[p.Dz]=Math.max(Date.now()-r.offset,0),(0,l.K)((()=>r[p.qw]=Math.max((0,h.z)()-r[p.Dz],0))),(0,l.b)((()=>{const t=(0,h.z)();r[p.OJ]=Math.max(t-r[p.Dz],0),(0,s.p)("timing",["load",t],void 0,e.D.pageViewTiming,this.ee)}))}this.importAggregator()}}var m=i(1117),b=i(1284);class y extends m.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,n,r,i){var o=this.getBucket(e,t,n,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,b.D)(e,(function(e,n){t[e]=w(n,t[e])})),t}(r,o.metrics),o}merge(e,t,n,r,i){var o=this.getBucket(e,t,r,i);if(o.metrics){var a=o.metrics;a.count+=n.count,(0,b.D)(n,(function(e,t){if("count"!==e){var r=a[e],i=n[e];i&&!i.c?a[e]=w(i.t,r):a[e]=function(e,t){if(!t)return e;t.c||(t=A(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=n}storeMetric(e,t,n,r){var i=this.getBucket(e,t,n);return i.stats=w(r,i.stats),i}getBucket(e,t,n,r){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:n||{}},r&&(i.custom=r)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},n="",r=!1,i=0;i<e.length;i++)t[n=e[i]]=x(this.aggregatedData[n]),t[n].length&&(r=!0),delete this.aggregatedData[n];return r?t:null}}function w(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=A(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function A(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function x(e){return"object"!=typeof e?[]:(0,b.D)(e,D)}function D(e,t){return t}var _=i(8632),j=i(4402),E=i(4351);var k=i(7956),T=i(3239),I=i(9251);class N extends g{static featureName=I.t;constructor(e,n){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,n,I.t,r),c.il&&((0,t.OP)(e).initHidden=Boolean("hidden"===document.visibilityState),(0,k.N)((()=>(0,s.p)("docHidden",[(0,h.z)()],void 0,I.t,this.ee)),!0),(0,T.bP)("pagehide",(()=>(0,s.p)("winPagehide",[(0,h.z)()],void 0,I.t,this.ee))),this.importAggregator())}}var P=i(3081);class S extends g{static featureName=P.t9;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,P.t9,n),this.importAggregator()}}new class{constructor(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,j.ky)(16);c._A?(this.agentIdentifier=t,this.sharedAggregator=new y({agentIdentifier:this.agentIdentifier}),this.features={},this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(v),Object.assign(this,(0,a.j)(this.agentIdentifier,e,e.loaderType||"agent")),this.start()):(0,f.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,t.C5)(this.agentIdentifier),init:(0,t.P_)(this.agentIdentifier),loader_config:(0,t.DL)(this.agentIdentifier),runtime:(0,t.OP)(this.agentIdentifier)}}start(){const t="features";try{const n=r(this.agentIdentifier),i=[...this.desiredFeatures];i.sort(((t,n)=>e.p[t.featureName]-e.p[n.featureName])),i.forEach((t=>{if(n[t.featureName]||t.featureName===e.D.pageViewEvent){const r=function(t){switch(t){case e.D.ajax:return[e.D.jserrors];case e.D.sessionTrace:return[e.D.ajax,e.D.pageViewEvent];case e.D.sessionReplay:return[e.D.sessionTrace];case e.D.pageViewTiming:return[e.D.pageViewEvent];default:return[]}}(t.featureName);r.every((e=>n[e]))||(0,f.Z)("".concat(t.featureName," is enabled but one or more dependent features has been disabled (").concat((0,E.P)(r),"). This may cause unintended consequences or missing data...")),this.features[t.featureName]=new t(this.agentIdentifier,this.sharedAggregator)}})),(0,_.Qy)(this.agentIdentifier,this.features,t)}catch(e){(0,f.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",e);for(const e in this.features)this.features[e].abortHandler?.();const n=(0,_.fP)();return delete n.initializedAgents[this.agentIdentifier]?.api,delete n.initializedAgents[this.agentIdentifier]?.[t],delete this.sharedAggregator,n.ee?.abort(),delete n.ee?.get(this.agentIdentifier),!1}}}({features:[v,N,S],loaderType:"lite"})})(),window.NRBA=o})();</script>
+<script type="text/javascript">window.siteregion = "tripit"</script>
+<link rel="canonical" href="https://www.tripit.com/web" />
+<meta name="description" content="An easier trip, each time starts with one place for all your plans. Add helpful reminders and alerts throughout your trip, so you don’t miss a beat." />
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script>window.schema_highlighter={accountId: 'ConcurTechnologies/TripIt', output: false}</script>
+<script async src="https://cdn.schemaapp.com/javascript/highlight.js"></script>
+<link rel="icon" href="/themes/custom/tripit_theme/favicon.ico" type="image/vnd.microsoft.icon" />
+<script>window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};</script>
+
+    <title>TripIt - Highest-rated trip planner and flight tracker</title>
+    <meta name="google-site-verification" content="gOeMZ0uWZi0ZmspK8X9xtFeTrS2HvTUIetRf8jZKJa0" />
+    <link rel="stylesheet" media="all" href="/sites/g/files/sqenrx236/files/css/css_T2vwevefhSPYwV57ufjXmmB0U8ukC8SOJLgw7S7Bj0Y.css" />
+<link rel="stylesheet" media="all" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" />
+<link rel="stylesheet" media="all" href="/sites/g/files/sqenrx236/files/css/css_zsygbJfSxddFf3kvctSWw5R9m37RHv4EirkkEpP1M28.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css" integrity="sha512-tGFFYdzcicBwsd5EPO92iUIytu9UkQR3tLMbORL9sfi/WswiHkA1O3ri9yHW+5dXk18Rd+pluMeDBrPKSwNCvw==" crossorigin="anonymous" />
+<link rel="stylesheet" media="all" href="/sites/g/files/sqenrx236/files/css/css_sRkFrWx9Z8UPeIcOd7rXpD8u8MiIOckyTyzJ_LrQWN8.css" />
+
+    
+  </head>
+  <body class="path-node page-node-type-landing-page has-glyphicons">
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+        
+
+          <header class="navbar navbar-default" id="navbar" role="banner">
+              <div class="navbar navbar-default container">
+            <div class="navbar-header">
+          <div class="region region-navigation">
+          <a class="logo navbar-btn pull-left" href="/" title="Home" rel="home">
+      <img src="/themes/custom/tripit_theme/images/logo-tripit.svg" alt="Home" />
+    </a>
+      
+  </div>
+
+                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+              </div>
+
+                    <div id="navbar-collapse" class="navbar-collapse collapse">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="true">
+  <span class="sr-only">Toggle navigation</span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+</button>
+  <div class="region region-navigation-collapsible">
+    <nav role="navigation" aria-labelledby="block-tripit-theme-main-menu-menu" id="block-tripit-theme-main-menu">
+            <h2 class="sr-only" id="block-tripit-theme-main-menu-menu">Main navigation</h2>
+
+      
+      <ul class="menu menu--main nav navbar-nav">
+                      <li class="first">
+                                        <a href="/web/free" data-drupal-link-system-path="node/71">TripIt</a>
+              </li>
+                      <li>
+                                        <a href="/web/pro" data-drupal-link-system-path="node/36">TripIt Pro</a>
+              </li>
+                      <li>
+                                        <a href="/web/free/how-it-works" data-drupal-link-system-path="node/76">How It Works</a>
+              </li>
+                      <li>
+                                        <a href="/web/pro/pricing" data-drupal-link-system-path="node/91">Pricing</a>
+              </li>
+                      <li>
+                                        <a href="/web/pro/sap-concur" data-drupal-link-system-path="node/56">SAP Concur</a>
+              </li>
+                      <li>
+                                        <a href="https://www.tripit.com/account/login">Sign In</a>
+              </li>
+                      <li class="last">
+                                        <a href="https://www.tripit.com/account/create">Sign Up—It&#039;s Free!</a>
+              </li>
+        </ul>
+  
+
+  </nav>
+<section id="block-dropdownlanguage" class="block block-dropdown-language block-dropdown-languagelanguage-interface clearfix">
+  
+    
+
+      <div class="dropdown-language-item btn-group dropdown">
+  <button class="language-link active-language button js-form-submit form-submit btn-default btn" hreflang="en" formnovalidate="formnovalidate" data-dropdown-target="#dropdown-item-rmkdvv6roeu" type="submit" name="op" value="EN">EN</button><button class="btn-default btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span><span class="sr-only">Toggle Dropdown</span></button>
+  <ul class="dropdown-menu" role="menu"><li hreflang="en" role="menuitem"><span class="language-link active-language hidden" formnovalidate="formnovalidate" id="dropdown-item-rmkdvv6roeu">EN</span></li><li hreflang="en-uk" role="menuitem"><a href="/en-uk/web" class="language-link" hreflang="en-uk" formnovalidate="formnovalidate" id="ajax-link-fg8hzm4halk">English (UK)</a></li><li hreflang="fr" role="menuitem"><a href="/fr/web" class="language-link" hreflang="fr" formnovalidate="formnovalidate" id="ajax-link-g3zzifpv-xm">Français</a></li><li hreflang="de" role="menuitem"><a href="/de/web" class="language-link" hreflang="de" formnovalidate="formnovalidate" id="ajax-link-yl737ix6wmk">Deutsch</a></li><li hreflang="es-co" role="menuitem"><a href="/es-co/web" class="language-link" hreflang="es-co" formnovalidate="formnovalidate" id="ajax-link-8li3-236rk4">Español (Latinoamérica)</a></li><li hreflang="es" role="menuitem"><a href="/es/web" class="language-link" hreflang="es" formnovalidate="formnovalidate" id="ajax-link-bfbcv3mnqem">Español (España)</a></li></ul>
+</div>
+
+  </section>
+
+<section id="block-socialmedialinks-3" class="block-social-media-links block block-social-media-links-block clearfix">
+  
+    
+
+      
+
+<ul class="social-media-links--platforms platforms inline horizontal">
+      <li>
+      <a class="social-media-link-icon--instagram" href="https://www.instagram.com/tripitcom"  target="_blank" aria-label="Follow us on Instagram" title="Follow us on Instagram" >
+        <span class='fa fa-instagram fa-in'></span>
+      </a>
+
+          </li>
+      <li>
+      <a class="social-media-link-icon--facebook" href="https://www.facebook.com/tripitcom"  target="_blank" aria-label="Follow us on Facebook" title="Follow us on Facebook" >
+        <span class='fa fa-facebook fa-in'></span>
+      </a>
+
+          </li>
+      <li>
+      <a class="social-media-link-icon--twitter" href="https://www.twitter.com/tripit"  target="_blank" aria-label="Follow us on Twitter" title="Follow us on Twitter" >
+        <span class='fa fa-twitter fa-in'></span>
+      </a>
+
+          </li>
+      <li>
+      <a class="social-media-link-icon--linkedin" href="https://www.linkedin.com/company/tripit"  target="_blank" aria-label="Find us on LinkedIn" title="Find us on LinkedIn" >
+        <span class='fa fa-linkedin fa-in'></span>
+      </a>
+
+          </li>
+      <li>
+      <a class="social-media-link-icon--youtube" href="https://www.youtube.com/user/tripitvideos"  target="_blank" aria-label="Follow us on Youtube" title="Follow us on Youtube" >
+        <span class='fa fa-youtube fa-in'></span>
+      </a>
+
+          </li>
+  </ul>
+
+  </section>
+
+      <a class="logo navbar-btn pull-left" href="/" title="Home" rel="home">
+      <img src="/themes/custom/tripit_theme/images/logo-tripit.svg" alt="Home" />
+    </a>
+      
+  </div>
+
+        </div>
+                    </div>
+          </header>
+  
+      <div id ="notification" class="notification">  <div class="region region-notification">
+    <div data-drupal-messages-fallback class="hidden"></div>
+<section id="block-sitewidealert" class="block block-sitewide-alert-block clearfix">
+  
+    
+
+      <div data-sitewide-alert></div>
+  </section>
+
+
+  </div>
+</div>
+  
+    <div role="main" class="en home main-container  js-quickedit-main-content">
+    <div class="row">
+
+            
+            
+            
+                  <section class="col-sm-12">
+                                      <div class="highlighted">  <div class="region region-highlighted">
+    
+  </div>
+</div>
+                  
+                          <a id="main-content"></a>
+            <div class="region region-content">
+      <article role="article" about="/web" class="landing-page full clearfix">
+
+  
+    
+
+  
+  <div class="content">
+    
+      <div class="field field--name-field-components field--type-entity-reference-revisions field--label-hidden field--items">
+              <div class="field--item">            <div class="background-image paragraph paragraph--type--component-global-heroes paragraph--view-mode--default" style="background-image:url('/sites/g/files/sqenrx236/files/2022-06/illu-homepage-hero.svg')">
+      
+            
+<div  class="container">
+      
+<div  class="inner-container">
+      
+            <div class="field field--name-field-component-background field--type-entity-reference field--label-hidden field--item"><div>
+  
+  
+  <div class="field field--name-field-media-svg field--type-svg-image-field field--label-visually_hidden">
+    <div class="field--label sr-only">SVG</div>
+              <div class="field--item">  <img width="25" height="25" alt="Illu homepage hero" src="/sites/g/files/sqenrx236/files/2022-06/illu-homepage-hero.svg" />
+</div>
+          </div>
+
+</div>
+</div>
+      
+<div  class="items-group">
+      
+            <div class="field field--name-field-component-hero-title field--type-string-long field--label-hidden field--item"><h1>An easier trip,<br />
+each time</h1>
+</div>
+      
+            <div class="field field--name-field-component-description-text field--type-text-long field--label-hidden field--item"><p>Imagine checking one place for your travel details and getting a heads up as things happen throughout your trip. See why life without TripIt is a distant memory for millions of travelers.</p></div>
+                  <div class="field field--name-field-component-repeatable-cta-l field--type-link field--label-hidden field--items">
+                  <div class="field--item"><a href="https://www.tripit.com/account/create" target="">Get Started</a></div>
+              </div>
+      
+  </div>
+
+  </div>
+
+  </div>
+
+      </div>
+</div>
+              <div class="field--item">   
+            <div class="paragraph paragraph--type--component-featurette paragraph--view-mode--default">
+            
+<div  class="container">
+      
+<div  class="inner-container">
+      
+            <div class="field field--name-field-tripit-image field--type-entity-reference field--label-hidden field--item"><div>
+  
+  
+            <div class="field field--name-image field--type-image field--label-hidden field--item">  <img loading="lazy" src="/sites/g/files/sqenrx236/files/2023-04/tripit-homepage-phone.png" width="450" height="450" alt="mobile phone in hand" typeof="foaf:Image" class="img-responsive" />
+
+</div>
+      
+</div>
+</div>
+      
+<div  class="items-group">
+      
+            <div class="field field--name-field-component-title field--type-string field--label-hidden field--item"><h2>You handle the booking, we&#039;ll take it from there</h2>
+</div>
+      
+            <div class="field field--name-field-component-description-text field--type-text-long field--label-hidden field--item"><p>Unlike other travel apps, TripIt can organize your travel plans no matter where you book. Simply forward your confirmation emails to plans@tripit.com and in a matter of seconds, TripIt will create a comprehensive itinerary for every trip.</p></div>
+      
+                    <div class="field field--name-field-cta-link field--type-link field--label-hidden field--item"><a href="/web/free/how-it-works" target="">Learn how it works</a></div>
+            
+            <div class="field field--name-field-component-quote-text field--type-text-long field--label-hidden field--item"><p>“I’m on the road 100 days a year and TripIt is my go-to-app. It’s such a powerful tool in the hands of a traveler. There’s simply nothing like it on the planet.”</p></div>
+      
+            <div class="field field--name-field-component-quote-name field--type-string field--label-hidden field--item">- Damen L.</div>
+      
+  </div>
+
+  </div>
+
+  </div>
+
+      </div>
+</div>
+              <div class="field--item">   
+            <div class="column-align-right paragraph paragraph--type--component-featurette paragraph--view-mode--default">
+            
+<div  class="container">
+      
+<div  class="inner-container">
+      
+            <div class="field field--name-field-tripit-image field--type-entity-reference field--label-hidden field--item"><div>
+  
+  
+  <div class="field field--name-field-media-svg field--type-svg-image-field field--label-visually_hidden">
+    <div class="field--label sr-only">SVG</div>
+              <div class="field--item">  <img width="25" height="25" alt="Illu homepage gate us covid" src="/sites/g/files/sqenrx236/files/2022-06/illu-homepage-gate-us-covid.svg" />
+</div>
+          </div>
+
+</div>
+</div>
+      
+<div  class="items-group">
+      
+            <div class="field field--name-field-component-title field--type-string field--label-hidden field--item"><h2>Helpful reminders and alerts so you don&#039;t miss a beat</h2>
+</div>
+      
+            <div class="field field--name-field-component-description-text field--type-text-long field--label-hidden field--item"><p>Packed with features that give you a leg up on changes and help you make the most of all your trips, TripIt Pro is where the magic happens.</p></div>
+      
+                    <div class="field field--name-field-cta-link field--type-link field--label-hidden field--item"><a href="/web/pro" target="">Learn all about TripIt Pro</a></div>
+            
+            <div class="field field--name-field-component-quote-text field--type-text-long field--label-hidden field--item"><p>“I love knowing exactly when my flights are, when they are delayed, what gate to leave from, and all the other amazing TripIt Pro features.”</p></div>
+      
+            <div class="field field--name-field-component-quote-name field--type-string field--label-hidden field--item">- Ann B.</div>
+      
+  </div>
+
+  </div>
+
+  </div>
+
+      </div>
+</div>
+              <div class="field--item">   
+            <div class="paragraph paragraph--type--component-featurette paragraph--view-mode--default">
+            
+<div  class="container">
+      
+<div  class="inner-container">
+      
+            <div class="field field--name-field-tripit-image field--type-entity-reference field--label-hidden field--item"><div>
+  
+  
+            <div class="field field--name-image field--type-image field--label-hidden field--item">  <img loading="lazy" src="/sites/g/files/sqenrx236/files/2023-04/tripit-homepage-nearby.png" width="450" height="450" alt="person using mobile app" typeof="foaf:Image" class="img-responsive" />
+
+</div>
+      
+</div>
+</div>
+      
+<div  class="items-group">
+      
+            <div class="field field--name-field-component-title field--type-string field--label-hidden field--item"><h2>Know where to be and when</h2>
+</div>
+      
+            <div class="field field--name-field-component-description-text field--type-text-long field--label-hidden field--item"><p>Need a reminder when it's time to leave for the airport? Not sure where to eat in the airport or near your hotel? TripIt has you covered.</p></div>
+      
+                    <div class="field field--name-field-cta-link field--type-link field--label-hidden field--item"><a href="/web/free/download" target="">Download the TripIt app</a></div>
+            
+            <div class="field field--name-field-component-quote-text field--type-text-long field--label-hidden field--item"><p>“My favorite business travel app so far is TripIt. Carrying all of my itineraries, it saves me during my ‘Where am I, what do I do next?’ panic attacks.”</p></div>
+      
+            <div class="field field--name-field-component-quote-name field--type-string field--label-hidden field--item">- Phil D.</div>
+      
+  </div>
+
+  </div>
+
+  </div>
+
+      </div>
+</div>
+              <div class="field--item">  <div class="paragraph paragraph--type--blog-list paragraph--view-mode--default">
+          
+<div  class="container">
+      
+            <div class="field field--name-field-component-title field--type-string field--label-hidden field--item"><h2>More from our blog</h2>
+</div>
+      
+      <div class="field field--name-field-blog field--type-entity-reference-revisions field--label-hidden field--items">
+              <div class="field--item">  <div class="paragraph paragraph--type--blogs-list paragraph--view-mode--default">
+          
+            <div class="field field--name-field-tripit-image field--type-entity-reference field--label-hidden field--item"><div>
+  
+  
+            <div class="field field--name-image field--type-image field--label-hidden field--item">  <img loading="lazy" src="/sites/g/files/sqenrx236/files/2022-08/More-from-our-blog-0422.png" width="359" height="239" alt="" typeof="foaf:Image" class="img-responsive" />
+
+</div>
+      
+</div>
+</div>
+                          <div class="field field--name-field-component-link field--type-link field--label-hidden field--item"><a href="/web/blog/news-culture/dont-scroll-search-tripit-adds-new-search-tool" target="">New Search Tool Added for Locating Trip Details in TripIt for iOS</a></div>
+            
+            <div class="field field--name-field-description field--type-string-long field--label-hidden field--item">With a few keywords, you can now search within your travel plans (past and upcoming) to find trip details.</div>
+      
+      </div>
+</div>
+              <div class="field--item">  <div class="paragraph paragraph--type--blogs-list paragraph--view-mode--default">
+          
+            <div class="field field--name-field-tripit-image field--type-entity-reference field--label-hidden field--item"><div>
+  
+  
+            <div class="field field--name-image field--type-image field--label-hidden field--item">  <img loading="lazy" src="/sites/g/files/sqenrx236/files/2022-08/more_from_our_blog_NOV_2x.png" width="719" height="479" alt="" typeof="foaf:Image" class="img-responsive" />
+
+</div>
+      
+</div>
+</div>
+                          <div class="field field--name-field-component-link field--type-link field--label-hidden field--item"><a href="/web/blog/travel-tips/city-break-manhattan" target="">City Break: Manhattan</a></div>
+            
+            <div class="field field--name-field-description field--type-string-long field--label-hidden field--item">In this series from TripIt, we explore some of the world’s best cities for planning a quick getaway or extending a work trip.</div>
+      
+      </div>
+</div>
+              <div class="field--item">  <div class="paragraph paragraph--type--blogs-list paragraph--view-mode--default">
+          
+            <div class="field field--name-field-tripit-image field--type-entity-reference field--label-hidden field--item"><div>
+  
+  
+            <div class="field field--name-image field--type-image field--label-hidden field--item">  <img loading="lazy" src="/sites/g/files/sqenrx236/files/2022-08/screen_shot_2021-10-01_at_9.01.20_am_720.png" width="720" height="478" alt="" typeof="foaf:Image" class="img-responsive" />
+
+</div>
+      
+</div>
+</div>
+                          <div class="field field--name-field-component-link field--type-link field--label-hidden field--item"><a href="/web/blog/news-culture/new-app-enhancements-travel-vaccination-status" target="">New Enhancements for Navigating Travel Based on Your Vaccination Status</a></div>
+            
+            <div class="field field--name-field-description field--type-string-long field--label-hidden field--item">Find information about vaccination rates and requirements, approved vaccines, exemptions for vaccinated travelers, and more, right in TripIt’s COVID-19 travel guidance feature.</div>
+      
+      </div>
+</div>
+          </div>
+  
+  </div>
+
+      </div>
+  
+</div>
+              <div class="field--item">  <div class="paragraph paragraph--type--component-video-display paragraph--view-mode--default" style="background-image:url('/sites/g/files/sqenrx236/files/2022-06/illu-homepage-video.svg')">
+          <div class="tablet-background" style="background-image:url('/sites/g/files/sqenrx236/files/2022-06/illu-homepage-vodeom.svg')"></div>
+      
+<div  class="container">
+      
+            <div class="field field--name-field-component-title field--type-string field--label-hidden field--item"><h2>Take a closer look</h2>
+</div>
+      
+            <div class="field field--name-field-component-description-text field--type-text-long field--label-hidden field--item"><p>Experience what it's like to travel with the TripIt app.</p></div>
+      
+            <div class="field field--name-field-video-url field--type-string field--label-hidden field--item">
+                <a href="#youtube-KRT2BBwHRIM" class="youtube" data-toggle="modal"><img src="/themes/custom/tripit_theme/images/btn-play.svg" /></a>
+        <div id="youtube-KRT2BBwHRIM" class="modal fade">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                  <div class="modal-body">
+                    <iframe id="youtube-modal" src="https://www.youtube.com/embed/KRT2BBwHRIM" frameborder="0" allowfullscreen></iframe>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      
+  </div>
+
+      </div>
+</div>
+              <div class="field--item">  <div class="paragraph paragraph--type--component-featured-client-logo paragraph--view-mode--default">
+          
+<div  class="container">
+      
+            <div class="field field--name-field-component-header field--type-string field--label-hidden field--item"><h2>As featured on</h2>
+</div>
+      
+      <div class="field field--name-field-client-logos field--type-entity-reference field--label-hidden field--items">
+              <div class="field--item"><div>
+  
+  
+  <div class="field field--name-field-media-svg field--type-svg-image-field field--label-visually_hidden">
+    <div class="field--label sr-only">SVG</div>
+              <div class="field--item">  <img width="25" height="25" alt="Thenewyorktimes" src="/sites/g/files/sqenrx236/files/2022-06/thenewyorktimes.svg" />
+</div>
+          </div>
+
+</div>
+</div>
+              <div class="field--item"><div>
+  
+  
+  <div class="field field--name-field-media-svg field--type-svg-image-field field--label-visually_hidden">
+    <div class="field--label sr-only">SVG</div>
+              <div class="field--item">  <img width="25" height="25" alt="Forbes" src="/sites/g/files/sqenrx236/files/2022-06/forbes.svg" />
+</div>
+          </div>
+
+</div>
+</div>
+              <div class="field--item"><div>
+  
+  
+  <div class="field field--name-field-media-svg field--type-svg-image-field field--label-visually_hidden">
+    <div class="field--label sr-only">SVG</div>
+              <div class="field--item">  <img width="25" height="25" alt="Cnet" src="/sites/g/files/sqenrx236/files/2022-06/cnet.svg" />
+</div>
+          </div>
+
+</div>
+</div>
+              <div class="field--item"><div>
+  
+  
+  <div class="field field--name-field-media-svg field--type-svg-image-field field--label-visually_hidden">
+    <div class="field--label sr-only">SVG</div>
+              <div class="field--item">  <img width="25" height="25" alt="Wallstreetjournal" src="/sites/g/files/sqenrx236/files/2022-06/wallstreetjournal.svg" />
+</div>
+          </div>
+
+</div>
+</div>
+              <div class="field--item"><div>
+  
+  
+  <div class="field field--name-field-media-svg field--type-svg-image-field field--label-visually_hidden">
+    <div class="field--label sr-only">SVG</div>
+              <div class="field--item">  <img width="25" height="25" alt="Mashable" src="/sites/g/files/sqenrx236/files/2022-06/mashable.svg" />
+</div>
+          </div>
+
+</div>
+</div>
+          </div>
+  
+  </div>
+
+      </div>
+</div>
+              <div class="field--item">  <div class="paragraph paragraph--type--component-footer-section paragraph--view-mode--default">
+          
+<div  class="container">
+      
+<div  class="inner-container">
+      
+            <div class="field field--name-field-component-header field--type-string field--label-hidden field--item"><h3>Try the travel app that keeps up with you</h3>
+</div>
+      
+            <div class="field field--name-field-component-content field--type-text-long field--label-hidden field--item"><p>So many trips, so little time. Let TripIt worry about the details, so you don't have to.</p></div>
+                          <div class="field field--name-field-component-link field--type-link field--label-hidden field--item"><a href="https://www.tripit.com/account/create" target="">Sign Up—It&#039;s Free!</a></div>
+            
+  </div>
+
+  </div>
+
+      </div>
+</div>
+          </div>
+  
+  </div>
+
+</article>
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+  
+
+  <footer role="contentinfo" class="footer container">
+    <div class="col-sm-12">
+                        <div class="col-sm-3">
+              <div class="region region-footer-left">
+          <a class="logo navbar-btn pull-left" href="/" title="Home" rel="home">
+      <img src="/themes/custom/tripit_theme/images/logo-tripit.svg" alt="Home" />
+    </a>
+      
+  </div>
+
+          </div>
+                                      <div class="col-sm-9">
+              <div class="region region-footer-right">
+    <nav role="navigation" aria-labelledby="block-footer-menu" id="block-footer">
+            
+  <h2 class="visually-hidden" id="block-footer-menu">Footer</h2>
+  
+
+        
+
+      <div id="footer_menu" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default menu-container">
+                      <div class="heading" role="tab" id="id_products">
+              <h4>
+                <a class="collapsed" data-toggle="collapse"  data-parent="#footer_menu" href="#products" aria-expanded="false">
+                  Products
+                </a>
+              </h4>
+            </div>
+                              <div id="products" class="panel-collapse collapse" role="tabpanel">
+            <ul class="menu-links">
+                                              <li><a id="" target="" title="" href="/web/free/download" >Download App</a></li>
+                                              <li><a id="" target="" title="" href="/web/free" >TripIt</a></li>
+                                              <li><a id="" target="" title="" href="/web/pro" >TripIt Pro</a></li>
+                                              <li><a id="" target="" title="" href="https://tripit.freshdesk.com/en/support/home" >Help Center</a></li>
+                          </ul>
+          </div>
+                  </div>
+              <div class="panel panel-default menu-container">
+                      <div class="heading" role="tab" id="id_news-&amp;-resources">
+              <h4>
+                <a class="collapsed" data-toggle="collapse"  data-parent="#footer_menu" href="#news-&amp;-resources" aria-expanded="false">
+                  News &amp; Resources
+                </a>
+              </h4>
+            </div>
+                              <div id="news-&amp;-resources" class="panel-collapse collapse" role="tabpanel">
+            <ul class="menu-links">
+                                              <li><a id="" target="" title="" href="/web/traveler-resource-center" >Traveler Resource Center</a></li>
+                                              <li><a id="" target="" title="" href="/web/blog" >Blog</a></li>
+                                              <li><a id="" target="" title="" href="https://jobs.sap.com/search/?q=%22tripit%22&amp;locationsearch=&amp;locale=en_US" >Jobs</a></li>
+                                              <li><a id="" target="" title="" href="https://www.tripit.com/uhp/userAgreement" >User Agreement</a></li>
+                                              <li><a id="" target="" title="" href="https://www.tripit.com/uhp/privacyPolicy" >Privacy Statement: Updated 12/21/22</a></li>
+                                              <li><a id="" target="" title="" href="/web/security" >Security</a></li>
+                                              <li><a id="" target="" title="" href="https://help.tripit.com/hc/en-us/articles/226108627-Auto-Import-security" >Google Data Policy</a></li>
+                                              <li><a id="" target="" title="" href="https://www.tripit.com/uhp/doNotShare" >Do Not Share/Sell My Personal Information</a></li>
+                          </ul>
+          </div>
+                  </div>
+              <div class="panel panel-default menu-container">
+                      <div class="heading" role="tab" id="id_partners">
+              <h4>
+                <a class="collapsed" data-toggle="collapse"  data-parent="#footer_menu" href="#partners" aria-expanded="false">
+                  Partners
+                </a>
+              </h4>
+            </div>
+                              <div id="partners" class="panel-collapse collapse" role="tabpanel">
+            <ul class="menu-links">
+                                              <li><a id="" target="" title="" href="https://www.tripit.com/developer" >Developer API</a></li>
+                                              <li><a id="" target="" title="" href="https://www.tripit.com/uhp/supportedVendors" >Supported Booking Sites</a></li>
+                          </ul>
+          </div>
+                  </div>
+          </div>
+  
+
+  </nav>
+
+  </div>
+
+          </div>
+                  </div>
+    <div class="col-sm-12">
+                        <div class="row">
+              <div class="region region-footer-bottom">
+    <section id="block-socialmedialinks" class="block-social-media-links block block-social-media-links-block clearfix">
+  
+    
+
+      
+
+<ul class="social-media-links--platforms platforms inline horizontal">
+      <li>
+      <a class="social-media-link-icon--instagram" href="https://www.instagram.com/tripitcom"  target="_blank" aria-label="Find us on Instagram" title="Find us on Instagram" >
+        <span class='fa fa-instagram fa-in'></span>
+      </a>
+
+          </li>
+      <li>
+      <a class="social-media-link-icon--facebook" href="https://www.facebook.com/tripitcom"  target="_blank" aria-label="Follow us on Facebook" title="Follow us on Facebook" >
+        <span class='fa fa-facebook fa-in'></span>
+      </a>
+
+          </li>
+      <li>
+      <a class="social-media-link-icon--twitter" href="https://www.twitter.com/TripIt"  target="_blank" aria-label="Follow us on Twitter" title="Follow us on Twitter" >
+        <span class='fa fa-twitter fa-in'></span>
+      </a>
+
+          </li>
+      <li>
+      <a class="social-media-link-icon--linkedin" href="https://www.linkedin.com/company/tripit"  target="_blank" aria-label="Find us on LinkedIn" title="Find us on LinkedIn" >
+        <span class='fa fa-linkedin fa-in'></span>
+      </a>
+
+          </li>
+      <li>
+      <a class="social-media-link-icon--youtube" href="https://www.youtube.com/user/tripitvideos"  target="_blank" aria-label="Follow us on Youtube" title="Follow us on Youtube" >
+        <span class='fa fa-youtube fa-in'></span>
+      </a>
+
+          </li>
+  </ul>
+
+  </section>
+
+<section id="block-copyright" class="block block-block-content block-block-content11d838d6-8146-440c-a52f-e6cf1212c494 clearfix">
+  
+    
+
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><p class="copyright"> © 2006-2023, Concur Technologies, Inc. All rights reserved. TripIt® and Concur® are registered trademarks of Concur Technologies, Inc. Other trademarks held by their respective owners.</p></div>
+      
+  </section>
+
+
+  </div>
+
+          </div>
+                  </div>
+  </footer>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/41","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"concur_tracking":{"contentType":"non-entity"},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click","tooltip_enabled":1,"tooltip_animation":1,"tooltip_container":"body","tooltip_delay":"0","tooltip_html":0,"tooltip_placement":"auto left","tooltip_selector":"","tooltip_trigger":"hover"},"field_group":{"html_element":{"mode":"default","context":"view","settings":{"classes":"items-group","show_empty_fields":false,"id":"","element":"div","show_label":false,"label_element":"h3","label_element_classes":"","attributes":"","effect":"none","speed":"fast"}}},"sitewideAlert":{"refreshInterval":15000,"automaticRefresh":true},"active":{"theme_path":"https:\/\/www.tripit.com\/themes\/custom\/tripit_theme\/assets\/img\/"},"user":{"uid":0,"permissionsHash":"fec87d09416c4f197033ead9861ffc6ad5886b76ed2dd5c1d6b064204884a910"}}</script>
+<script src="/sites/g/files/sqenrx236/files/js/js_FytOrAY6pA3bDjgKCoISZILfvVzvHc6qjesfxxtF_MM.js"></script>
+<script src="https://static.addtoany.com/menu/page.js" async></script>
+<script src="/sites/g/files/sqenrx236/files/js/js_qX-Gkhum0HVjPRyXPKKiGPvTSKpxCJy-Jic1aStqHpU.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+<script src="/sites/g/files/sqenrx236/files/js/js_qYgwbo7de-zEQZTe4Q2gh3ArZQjS50YabHqy34ZjVvw.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch"></script>
+<script src="/sites/g/files/sqenrx236/files/js/js_cZUtQ9jvLLYTv-PnHH6_OJ8jqrkyIXo63V4H3O0n_dc.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"73cfbe2969","applicationID":"385822913","transactionName":"YgZUZEJRXEsEAhIKV1tMd1NEWV1WSiUUFkhUD2peX1RXZCYOCBdKWg9aVUJsfFcBBDAKXUIgWV5EQl1UCQQUTgZDClNH","queueTime":2,"applicationTime":1350,"atts":"TkFXEgpLT0U=","errorBeacon":"bam.nr-data.net","agent":""}</script><script type="text/javascript"  src="/TSPPY/IPCOM/Ap/tFDA/vUVV/Sii7NkS4hwr3/W3QcSzUB/Z1R9EWM/_XQM"></script></body>
+</html>
